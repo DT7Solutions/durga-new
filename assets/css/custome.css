@@ -1,17 +1,31 @@
 
+/* Root Global */
+:root {
+    --tg-primary-color: #ed1d24;
+    --tg-secondary-color: #FAA432;
+}
+.btn-three {
+    padding: 10px 27px;
+}
+
 /* Header */
 .menu-area-two {
     border-bottom: none;
 }
 .menu-area-two .logo {
     border-right: none;
+    padding: 5px 30px;
+}
+.menu-area-two .navbar-wrap ul li a {
+    padding: 10px 20px;
+    line-height: 20px;
 }
 
 /* Banner Section */
-.banner-area-two {
+/* .banner-area-two {
     position: relative;
     overflow: hidden;
-}
+} */
 .banner-area-two .video-bg {
     position: absolute;
     top: 0;
@@ -24,6 +38,18 @@
 
 /* Brand Partners */
 .brand-item {
-    max-width: 100%;
+    max-width: 125px;
     max-height: 100%;
+}
+
+
+/* Responsiveness */
+@media (max-width: 1500px) {
+    .banner-img-two {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .features-products-thumb {
+        margin: 0px 60px 0px 75px;
+    }
 }

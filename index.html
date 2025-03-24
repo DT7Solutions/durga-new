@@ -52,7 +52,7 @@
         <!-- Scroll-top-end-->
 
         <!-- header-area -->
-        <header id="home">
+        <header>
             <div id="sticky-header" class="menu-area menu-area-two transparent-header">
                 <div class="container-fluid p-0">
                     <div class="row g-0">
@@ -67,12 +67,11 @@
                                         <a href="index.html"><img src="assets/img/logo/durga-ghee-logo.png" alt="Logo"></a>
                                     </div>
                                     <div class="navbar-wrap main-menu d-none d-xl-flex">
-                                        <ul class="navigation">
+                                        <ul class="navigation align-items-center">
                                             <li class="active"><a href="#home" class="section-link">Home</a></li>
+                                            <li><a href="#about" class="section-link">About</a></li>
                                             <li><a href="#features" class="section-link">Features</a></li>
-                                            <li><a href="#product" class="section-link">Product</a></li>
-                                            <li><a href="#ingredient" class="section-link">Ingredient</a></li>
-                                            <li class="menu-item-has-children"><a href="#shop" class="section-link">Shop</a>
+                                            <li class="menu-item-has-children"><a href="#product" class="section-link">Product</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="shop.html">Our Shop</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
@@ -136,26 +135,6 @@
             <div class="menu-backdrop"></div>
             <!-- End Mobile Menu -->
 
-            <!-- header-search -->
-            <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="search-wrap text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="search-form">
-                                    <form action="#">
-                                        <input type="text" placeholder="Enter your keyword...">
-                                        <button class="search-btn"><i class="flaticon-search"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="search-backdrop"></div>
-            <!-- header-search-end -->
-
             <!-- offCanvas-start -->
             <div class="offCanvas-wrap">
                 <div class="offCanvas-toggle"><video src="assets/img/icons/close.png" alt="icon"></div>
@@ -186,7 +165,7 @@
         <main class="main-area fix">
             
             <!-- banner-area -->
-            <section class="banner-area-two banner-bg" data-background="">
+            <section id="home" class="banner-area-two banner-bg" data-background="">
                 <video autoplay loop muted playsinline class="video-bg">
                     <source src="./assets/img/video/durga-ghee-unlock-the-flavour-pure-aroma-of-golden.mp4" type="video/mp4">
                 </video>
@@ -233,37 +212,37 @@
                         </div>
                     </div>
                     <div class="row brand-active">
-                        <div class="col-2">
+                        <div class="col-3">
                             <div class="brand-item">
                                 <a href="#"><img src="assets/img/partners/amazon.png" alt="Available on Amazon"></a>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
                             <div class="brand-item">
                                 <a href="#"><img src="assets/img/partners/flipkart.png" alt="Available on Flipkart"></a>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
                             <div class="brand-item">
                                 <a href="#"><img src="assets/img/partners/bigbasket.png" alt="Available on BigBasket"></a>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
                             <div class="brand-item">
                                 <a href="#"><img src="assets/img/partners/jiomart.png" alt="Available on JioMart"></a>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
                             <div class="brand-item">
                                 <a href="#"><img src="assets/img/partners/swiggyinstamart.png" alt="Available on Swiggy Instamart"></a>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
                             <div class="brand-item">
                                 <a href="#"><img src="assets/img/partners/zepto.png" alt="Available on Zepto"></a>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
                             <div class="brand-item">
                                 <a href="#"><img src="assets/img/partners/blinkit.png" alt="Available on Blinkit"></a>
                             </div>
@@ -274,35 +253,73 @@
             <!-- brand-area-end -->
 
             <!-- about-area -->
-            <section id="about" class="about-area section-pb-130">
+            <section id="about" class="about-area features-products">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="about-img text-center">
-                                <img src="assets/img/others/about_img.png" alt="img">
+                    <div class="features-products-wrap">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="features-products-thumb">
+                                    <div class="main-img">
+                                        <img src="assets/img/products/durga-ghee-product.png" alt="Pure Desi Ghee - Durga Ghee">
+                                    </div>
+                                    <img src="assets/img/products/features_product_shape01.png" alt="Organic Ghee Shape" class="shape-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-10">
+                                <div class="about-content">
+                                    <div class="section-title section-title-two mb-35">
+                                        <h2 class="title">Experience the Purity of Durga Ghee</h2>
+                                    </div>
+                                    <p>Durga Ghee is a rich source of essential nutrients, made from high-quality cow’s milk using traditional methods to retain its authentic taste and health benefits. Packed with vitamins and healthy fats, it supports digestion, boosts immunity, and enhances overall well-being. Ideal for cooking, Ayurvedic remedies, and daily consumption, Durga Ghee adds a delicious and nutritious touch to every meal.</p>
+                                    <a href="shop.html" class="btn btn-three">Get Pure Ghee Now</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="about-content">
-                                <div class="section-title section-title-two mb-35">
-                                    <div class="sub-title">
-                                        <img src="assets/img/icons/sub_left.svg" class="injectable" alt="img">
-                                        Perfect Brand is Featured on
-                                        <img src="assets/img/icons/sub_right.svg" class="injectable" alt="img">
+                    </div>
+                    <div class="features-products-wrap">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="features-products-thumb">
+                                    <div class="main-img">
+                                        <img src="assets/img/products/features_product02.png"  alt="Durga Ghee Manufacturing Unit">
                                     </div>
-                                    <h2 class="title">Awesome Supplement For Your Body</h2>
+                                    <img src="assets/img/products/features_product_shape02.png" alt="Ghee Production Shape" class="shape-img">
                                 </div>
-                                <p>Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency. Low vitamin D levels cause depression, fatigue, and muscle weakness. Over time, vitamin D deficiency can lead to weak bones, rickets in children, and osteoporosis in adults. </p>
-                                <a href="shop.html" class="btn btn-three">Shop Now</a>
+                            </div>
+                            <div class="col-lg-6 col-md-10">
+                                <div class="about-content">
+                                    <div class="section-title section-title-two mb-35">
+                                        <h2 class="title">Durga Ghee – A Tradition of Purity Since 1987</h2>
+                                    </div>
+                                    <p>Established in 1987, Virat Crane Industries Ltd. has been a pioneer in the dairy industry, producing Durga Ghee, a name synonymous with purity and quality. With decades of expertise, we manufacture ghee using traditional churning methods combined with modern technology to preserve its rich aroma, authentic taste, and essential nutrients.</p>
+                                    <p>Our production process follows strict hygiene standards, ensuring that our ghee is 100 percent pure, free from adulteration, and rich in health benefits. We supply to leading hotels, restaurants, food chains, and households, making Durga Ghee a trusted choice across generations.</p>
+                                    <a href="shop.html" class="btn btn-three">Explore Our Ghee</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="fp-shapes-wrap">
+                    <div class="fp-shape-one">
+                        <img src="assets/img/others/features_sec_shape01.png" alt="shape" class="paroller rotateme" data-paroller-factor="0.25" data-paroller-factor-lg="0.20" data-paroller-factor-md="0.25" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="vertical">
+                    </div>
+                    <div class="fp-shape-two">
+                        <img src="assets/img/others/features_sec_shape02.png" alt="shape" class="paroller rotateme" data-paroller-factor="-0.25" data-paroller-factor-lg="0.20" data-paroller-factor-md="0.25" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="vertical">
+                    </div>
+                    <div class="fp-shape-three">
+                        <img src="assets/img/others/features_sec_shape03.png" alt="shape" class="paroller rotateme" data-paroller-factor="0.25" data-paroller-factor-lg="0.20" data-paroller-factor-md="0.25" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="vertical">
+                    </div>
+                </div>
+                <div class="fp-circle one"></div>
+                <div class="fp-circle two"></div>
+                <div class="fp-circle three"></div>
+                <div class="fp-circle four"></div>
+                <div class="fp-circle five"></div>
             </section>
             <!-- about-area-end -->
 
             <!-- supplement-area -->
-            <section id="ingredient" class="tg-supplement-area pb-120">
+            <section class="tg-supplement-area pb-120">
                 <div class="tg-supplement-bg"></div>
                 <div class="container">
                     <div class="tg-supplement-inner">
@@ -312,7 +329,7 @@
                                     <img src="assets/img/others/supplement_img.png" alt="">
                                 </div>
                                 <div class="tg-supplement-shape">
-                                    <img src="assets/img/others/supplement_shape02.png" alt="" class="rotateme">
+                                    <img src="assets/img/others/supplement_shape02.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">

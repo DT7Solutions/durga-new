@@ -21,21 +21,33 @@ $(window).on('load', function () {
 /*=============================================
 	=          One page Menu               =
 =============================================*/
-var scrollLink = $('.section-link');
-// Active link switching
-$(window).scroll(function () {
-	var scrollbarLocation = $(this).scrollTop();
-
-	scrollLink.each(function () {
-
-		var sectionOffset = $(this.hash).offset().top - 90;
-
-		if (sectionOffset <= scrollbarLocation) {
-			$(this).parent().addClass('active');
-			$(this).parent().siblings().removeClass('active');
-		}
-	});
+$(document).ready(function () {
+    var scrollLink = $('.section-link');
+    scrollLink.on('click', function (e) {
+        e.preventDefault();
+        var target = $(this.hash);
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 80
+            }, 800);
+        }
+    });
+    $(window).on('scroll', function () {
+        var scrollbarLocation = $(this).scrollTop();
+        scrollLink.each(function () {
+            var target = $(this.hash);
+            if (target.length) {
+                var sectionOffset = target.offset().top - 90;
+                var sectionHeight = target.outerHeight();
+                if (scrollbarLocation >= sectionOffset && scrollbarLocation < sectionOffset + sectionHeight) {
+                    $(this).parent().addClass('active');
+                    $(this).parent().siblings().removeClass('active');
+                }
+            }
+        });
+    });
 });
+
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {
 	$('a.section-link[href*="#"]:not([href="#"])').on('click', function () {
@@ -51,7 +63,6 @@ $(function () {
 		}
 	});
 });
-
 
 /*=============================================
 	=    		Mobile Menu			      =
@@ -130,7 +141,7 @@ $(".search-backdrop").on('click', function () {
 =============================================*/
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 245) {
+	if (scroll < 200) {
 		$("#sticky-header").removeClass("sticky-menu");
 		$('.scroll-to-target').removeClass('open');
 		$("#header-top-fixed").removeClass("header-fixed-position");
@@ -238,22 +249,14 @@ $('.brand-active').slick({
 		{
 			breakpoint: 992,
 			settings: {
-				slidesToShow: 4,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 767,
-			settings: {
 				slidesToShow: 3,
-				slidesToScroll: 1,
-				arrows: false,
+				slidesToScroll: 1
 			}
 		},
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 2,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: false,
 			}
