@@ -7,6 +7,17 @@
 .btn-three {
     padding: 10px 27px;
 }
+.padding-defult {
+    padding: 5% 0;
+}
+.padding-defult-top {
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+.padding-defult-bottom {
+    padding-bottom: 5%;
+    padding-top: 0%;
+}
 
 /* Header */
 .menu-area-two {
@@ -22,10 +33,9 @@
 }
 
 /* Banner Section */
-/* .banner-area-two {
-    position: relative;
-    overflow: hidden;
-} */
+.banner-area-two {
+    padding: 7.5% 0% 0%;
+}
 .banner-area-two .video-bg {
     position: absolute;
     top: 0;
@@ -38,10 +48,39 @@
 
 /* Brand Partners */
 .brand-item {
-    max-width: 125px;
+    max-width: 150px;
     max-height: 100%;
 }
 
+/* Features */
+.features-item-three .features-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+}
+.features-item-three:hover .features-content p {
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+}
+
+/* Video Process */
+.tg-video-bg {
+    background-image: url(https://codeskdhaka.com/html/dairypress-prev/dairypress/assets/img/bg/video-bg.jpg);
+}
+.tg-video-bg::after {
+    opacity: 0.65;
+    background-image: -webkit-linear-gradient(5deg, #ed1d24 0%, #b31217 80%);
+}
+.tg-video-img .play-btn {
+    background-color: #ed1d24;
+    background-image: linear-gradient(135deg, #ed1d24 0%, #b31217 100%);
+}
 
 /* Responsiveness */
 @media (max-width: 1500px) {
@@ -51,5 +90,8 @@
     }
     .features-products-thumb {
         margin: 0px 60px 0px 75px;
+    }
+    .features-products-wrap:nth-child(2n) .features-products-thumb {
+        margin: 0px 65px 0px 55px;
     }
 }
