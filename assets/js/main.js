@@ -394,6 +394,18 @@ $('.related-product-active').slick({
 	]
 });
 
+/*=============================================
+	=    		Product Benifit Active		      =
+=============================================*/
+$('.durga-ghee-benifit-active').slick({
+	dots: true,
+	infinite: true,
+	speed: 1000,
+	autoplay: true,
+	arrows: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+});
 
 /*=============================================
 	=         Testimonial Active          =

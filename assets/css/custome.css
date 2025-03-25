@@ -3,6 +3,8 @@
 :root {
     --tg-primary-color: #ed1d24;
     --tg-secondary-color: #FAA432;
+    --tg-white-color: #ffffff;
+    --tg-rating-color: #FFD700;
 }
 .btn-three {
     padding: 10px 27px;
@@ -17,6 +19,14 @@
 .padding-defult-bottom {
     padding-bottom: 5%;
     padding-top: 0%;
+}
+.padding-defult-top-bottom {
+    padding-top: 5%;
+    padding-bottom: 12.5%;
+}
+.scroll-top:hover {
+    background-color: var(--tg-primary-color);
+    opacity: 1;
 }
 
 /* Header */
@@ -53,20 +63,76 @@
 }
 
 /* Features */
-.features-item-three .features-content p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: all 0.3s ease-in-out;
+.features-item-three {
+    display: flex;
+    text-align: center;
+    margin-bottom: 2.5% !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.features-item-three:hover .features-content p {
-    -webkit-line-clamp: unset;
-    -webkit-box-orient: unset;
-    overflow: visible;
-    text-overflow: unset;
-    white-space: normal;
+.features-item-three .features-content p {
+    padding: 2.5%;
+    min-height: 175px;
+}
+.features-item-three .features-icon::after {
+	content: "";
+	position: absolute;
+    left: -7.5%;
+    top: -7.5%;
+	width: 120px;
+	height: 120px;
+	background: var(--tg-white-color);
+	border-radius: 50%;
+	z-index: -9;
+    opacity: 0.9;
+    transform: none;
+}
+.features-item:hover .features-icon::after {
+    left: -7.5%;
+}
+
+/* Products Shop */
+.product-content .rating {
+    display: flex;
+    align-items: center;
+    color: var(--tg-rating-color);
+    gap: 0 2px;
+}
+
+/* Product Benifits */
+.durga-ghee-benifit-active .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0 0;
+	padding: 0 0;
+}
+.durga-ghee-benifit-active .slick-dots li {
+	list-style: none;
+	line-height: 1;
+	margin: 0 5px;
+}
+.durga-ghee-benifit-active .slick-dots li button {
+	border: none;
+	padding: 0;
+	text-indent: -99999px;
+	width: 10px;
+	height: 10px;
+	background: var(--tg-primary-color);
+	opacity: .3;
+	border-radius: 50%;
+	display: block;
+	line-height: 1;
+}
+.durga-ghee-benifit-active .slick-dots li.slick-active button {
+	box-shadow: 0px 3px 3px rgba(250, 164, 50, 0.22);
+	border-radius: 5px;
+	width: 20px;
+	opacity: 1;
+}
+.durga-ghee-benifit-active .slick-arrow:hover::before {
+	opacity: 1;
 }
 
 /* Video Process */
@@ -80,6 +146,19 @@
 .tg-video-img .play-btn {
     background-color: #ed1d24;
     background-image: linear-gradient(135deg, #ed1d24 0%, #b31217 100%);
+}
+
+/* Testimonial Reviews */
+.testimonial-rating {
+    display: inline-flex;
+    justify-content: center;
+    max-width: 150px;
+    margin: 0 0 2.5%;
+}
+
+/* Footer */
+.footer-top-wrap {
+    background: rgb(10, 10, 10);
 }
 
 /* Responsiveness */
