@@ -4,6 +4,7 @@
     --tg-primary-color: #ed1d24;
     --tg-secondary-color: #FAA432;
     --tg-white-color: #ffffff;
+    --tg-black-color: #000000;
     --tg-rating-color: #FFD700;
 }
 .btn-three {
@@ -75,21 +76,17 @@
     padding: 2.5%;
     min-height: 175px;
 }
-.features-item-three .features-icon::after {
-	content: "";
-	position: absolute;
-    left: -7.5%;
-    top: -7.5%;
-	width: 120px;
-	height: 120px;
-	background: var(--tg-white-color);
-	border-radius: 50%;
-	z-index: -9;
-    opacity: 0.9;
-    transform: none;
+.features-item-three .features-icon {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    background: var(--tg-white-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
-.features-item:hover .features-icon::after {
-    left: -7.5%;
+.features-item-three .features-icon::after {
+    display: none;
 }
 
 /* Products Shop */
@@ -158,7 +155,8 @@
 
 /* Footer */
 .footer-top-wrap {
-    background: rgb(10, 10, 10);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg/footer-bg.png) no-repeat center center;
+    background-size: cover;
 }
 
 /* Responsiveness */
