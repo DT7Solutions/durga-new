@@ -98,6 +98,9 @@
 }
 
 /* Product Benifits */
+.benifits .ingredients-icon img {
+    max-width: 50px;
+}
 .durga-ghee-benifit-active .slick-dots {
 	display: flex;
 	align-items: center;
@@ -153,10 +156,40 @@
     margin: 0 0 2.5%;
 }
 
+/* News blogs */
+.tg-blog-overlay-tag > a {
+    background-color: var(--tg-primary-color);
+    color: var(--tg-white-color);
+}
+.tg-shop-action .action-item:hover::before, 
+.tg-blog-overlay-tag > a:hover::before {
+    opacity: 0;
+}
+.tg-blog-overlay-tag > a:hover {
+    background-color: var(--tg-white-color);
+    color: var(--tg-primary-color);
+}
+
+/* Footer Insta Posts */
+.footer-insta-item a::before {
+    background: var(--tg-primary-color);
+}
+
 /* Footer */
 .footer-top-wrap {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg/footer-bg.png) no-repeat center center;
+    background: url(../img/bg/footer-bg.png) no-repeat center center;
     background-size: cover;
+}
+.footer-top-wrap h4,
+.footer-top-wrap p,
+.footer-top-wrap ul li a {
+    color: var(--tg-black-color) !important;
+}
+.footer-contact-wrap .list-wrap li i {
+    color: var(--tg-primary-color);
+}
+.footer-social a:hover {
+    background: var(--tg-primary-color);
 }
 
 /* Responsiveness */
