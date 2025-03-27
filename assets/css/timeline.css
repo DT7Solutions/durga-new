@@ -307,7 +307,7 @@
 
 .h--timeline-event-title {
   color: #000;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -315,7 +315,6 @@
   display: block;
   font-style: italic;
   margin: 0.5rem auto;
-  margin: 1rem auto;
 }
 
 .h--timeline-event-date::before {

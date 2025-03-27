@@ -235,8 +235,8 @@ $('.brand-active').slick({
 	speed: 1000,
 	autoplay: true,
 	arrows: false,
-	slidesToShow: 6,
-	slidesToScroll: 2,
+	slidesToShow: 5,
+	slidesToScroll: 1,
 	responsive: [
 		{
 			breakpoint: 1200,
@@ -249,14 +249,14 @@ $('.brand-active').slick({
 		{
 			breakpoint: 992,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 4,
 				slidesToScroll: 1
 			}
 		},
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 1,
+				slidesToShow: 3,
 				slidesToScroll: 1,
 				arrows: false,
 			}
