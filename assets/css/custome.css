@@ -28,8 +28,11 @@
 .rounded {
     border-radius: 1rem !important;
 }
-.scroll-top:hover {
+.scroll-top {
     background-color: var(--tg-primary-color);
+}
+.scroll-top:hover {
+    background-color: var(--tg-secondary-color);
     opacity: 1;
 }
 .section-title .title {
@@ -328,6 +331,10 @@
 .footer-social {
     margin-top: 2.5%;
 }
+.copyright-wrap {
+    background: var(--tg-secondary-color);
+    border-top: 1px solid var(--tg-primary-color);
+}
 
 /* Responsiveness */
 @media (max-width: 1500px) {
@@ -409,5 +416,51 @@
     .product-content .rating,
     .product-content .product-bottom  {
         justify-content: center;
+    }
+}
+@media (max-width: 575px) {
+    .banner-img-two {
+        bottom: -2.5%;
+    }
+    .brand-item {
+        max-width: 75px;
+    }
+    .section-title .title {
+        font-size: 28px;
+    }
+    .features-products-thumb {
+        margin: 0px 0px 0px 25px;
+    }
+    .counter-wrap {
+        margin-top: 2.5%;
+    }
+    .counter-item {
+        padding: 5% 2.5%;
+        gap: 10px;
+    }
+    .counter-wrap .counter-item {
+        flex-direction: row;
+    }
+    .counter-content .count {
+        justify-content: start;
+        font-size: 26px;
+    }
+    .counter-icon img {
+        max-width: 50px;
+    }
+    .ingredients-item-wrap .ingredients-item-two,
+    .ingredients-item-wrap.reverse-item .ingredients-item-two {
+        flex-direction: row;
+        text-align: start;
+        gap: 20px;
+    }
+    .ingredients-item-wrap {
+        margin: 5% 0px;
+    }
+    .ingredients-content-two p {
+        min-height: auto;
+    }
+    .durga-ghee-benifit-active .slick-dots {
+        margin-top: -10%;
     }
 }
