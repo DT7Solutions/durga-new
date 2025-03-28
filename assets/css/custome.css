@@ -41,6 +41,9 @@
     letter-spacing: 0;
     margin-bottom: 0;
 }
+.tg-cube-grid .tg-cube {
+    background-color: var(--tg-primary-color);
+}
 
 /* Header */
 .menu-area-two {
@@ -128,6 +131,9 @@
 }
 
 /* Features */
+.features-bg-two::before {
+    background: rgba(0, 0, 0, 0.6);
+}
 .features-item-three {
     display: flex;
     text-align: center;
@@ -186,6 +192,11 @@
     margin-bottom: 3px;
     font-size: 36px;
     font-weight: 500;
+}
+
+/* Why Choose Us */
+.ingredients-img::after {
+    display: none;
 }
 
 /* Products Shop */
@@ -272,6 +283,10 @@
     max-width: 150px;
     margin: 0 0 2.5%;
 }
+.testimonial-bg::before,
+.testimonial-bg::after {
+    display: none;
+}
 
 /* News blogs */
 .tg-blog-overlay-tag > a {
@@ -339,8 +354,11 @@
 .footer-contact-wrap .list-wrap li i {
     color: var(--tg-primary-color);
 }
-.footer-social a:hover {
+.footer-social a {
     background: var(--tg-primary-color);
+}
+.footer-social a:hover {
+    background: var(--tg-secondary-color);
 }
 .footer-widgets-wrap .row [class*="col-"]:nth-child(4n+2) .footer-widget {
 	padding-left: 2.5%;
