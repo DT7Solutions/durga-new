@@ -253,6 +253,9 @@
     opacity: 0.4;
     background-image: -webkit-linear-gradient(5deg, #ed1d24 0%, #b31217 65%);
 }
+.tg-video-bg::before {
+    display: none;
+}
 .tg-video-img .play-btn {
     background-color: #ed1d24;
     background-image: linear-gradient(135deg, #ed1d24 0%, #b31217 100%);
