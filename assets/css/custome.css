@@ -366,6 +366,14 @@
 .copyright-wrap {
     background: var(--tg-secondary-color);
     border-top: 1px solid var(--tg-primary-color);
+    padding: 1% 0% 0.5%;
+}
+.copyright-text p {
+    color: var(--tg-black-color);
+    opacity: 1;
+}
+.copyright-text p a {
+    font-weight: 600;
 }
 
 /* Responsiveness */
