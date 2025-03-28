@@ -285,10 +285,6 @@
 }
 
 /* CTA */
-.cta-area {
-    padding: 60px 0;
-    background: #f8f8f8;
-}
 .cta-wrap {
     background-size: cover;
     background-position: center;
@@ -317,13 +313,8 @@
 }
 
 /* Footer Insta Posts */
-.footer-insta-item a img {
-    border: 1px solid var(--tg-white-color);
-    border-radius: 6px;
-}
 .footer-insta-item a::before {
     background: var(--tg-primary-color);
-    border-radius: 6px;
 }
 .footer-insta-item a:hover::before {
     opacity: 0.5;
