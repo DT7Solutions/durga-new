@@ -123,9 +123,9 @@
 }
 .about-area .features-products-thumb .shape-img {
     position: absolute;
-    bottom: 7.5%;
-    left: -12.5%;
-    z-index: -1;
+    bottom: 5%;
+    left: -15%;
+    z-index: 0;
     transition: .35s linear;
     max-width: 100%;
 }
@@ -170,7 +170,7 @@
 
 /* Counter */
 .counter-wrap {
-    background: var(--tg-white);
+    background: var(--tg-gray-two);
     padding: 2.5% 5%;
     border-radius: 10px;
     margin-top: -15%;
@@ -181,7 +181,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--tg-gray-two);
+    background: var(--tg-white);
     border-radius: 5px;
     padding: 10% 5%;
     gap: 20px;
