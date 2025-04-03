@@ -431,6 +431,25 @@
         max-width: 100%;
         margin: 0 auto;
     }
+    .ingredients-item {
+        margin: 0 0 5%;
+    }
+    .ingredients-thumb {
+        margin: 0px;
+    }
+    .ingredients-thumb img {
+        max-width: 80px;
+    }
+    .ingredients-content .title {
+        margin: 0 0 10px;
+    }
+    .ingredients-items-wrap .row> :nth-child(4n+2) .ingredients-item,
+    .ingredients-items-wrap .row> :nth-child(4n) .ingredients-item {
+        margin: 0px;
+    }
+    .ingredients-items-wrap .row> :nth-last-child(-n+2) .ingredients-item {
+        margin-bottom: 0px;
+    }
 }
 @media (max-width: 991px) {
     .brand-item {
