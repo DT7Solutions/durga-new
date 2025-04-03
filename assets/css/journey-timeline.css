@@ -1,0 +1,270 @@
+
+/* Timeline Journey */
+.time-line {
+    padding: 5% 0%;
+    background: url(https://www.grbdairyfood.com/image/home-section2-bg.jpg) no-repeat center top;
+    /* background: url(../img/bg/footer-bg-old.png) no-repeat center top; */
+    background-size: cover;
+    margin-bottom: 2.5%;
+}
+.his-img {
+    text-align: center;
+}
+.upholding-head {
+    color: #6a2d0d;
+    font-size: 24px;
+    width: 100%;
+    margin: 0px auto;
+    line-height: 1.2;
+}
+.throught-aegs {
+    color: #b75a17;
+    font-size: 20px;
+    width: 100%;
+    margin: 0px auto;
+    line-height: 1.2;
+}
+.content-tabs {
+    text-align: center;
+}
+.content-tabs p {
+    color: #010101;
+    font-size: 18px;
+    font-style: italic;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+.tab-content-style-9 {
+    width: 80%;
+    float: right;
+}
+.tabstyle-9 .responsive-tabs li a {
+    display: block;
+    padding: 0px 0px 0px 50px;
+    text-align: left;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+    font-weight: bold;
+    color: #010101;
+    background: transparent url(../img/icons/dot.png) no-repeat 2px 12px;
+}
+.tabstyle-9 .responsive-tabs li a:hover,
+.tabstyle-9 .responsive-tabs li.active,
+.tabstyle-9 .responsive-tabs li.active a {
+    color: #d72016;
+    background: transparent url(../img/icons/dot-seleted.png) no-repeat 2px 12px;
+    transform: scale(1);
+}
+.tabstyle-9 .responsive-tabs {
+    width: 20%;
+    margin: 0;
+    padding: 2.5%;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    float: left;
+    background-color: transparent;
+}
+.tabstyle-9 .responsive-tabs li {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    padding: 0;
+    border-right: 0px solid #ebebeb;
+    border-top: 0px solid #ebebeb;
+    border-bottom: 0px solid #ebebeb;
+    border-left: 0px solid #ebebeb !important;
+    background-color: transparent;
+    float: none;
+    position: relative;
+}
+.tabstyle-9 .responsive-tabs li {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    padding: 0;
+    border-right: 0px solid #ebebeb;
+    border-top: 0px solid #ebebeb;
+    border-bottom: 0px solid #ebebeb;
+    border-left: 0px solid #ebebeb !important;
+    background-color: transparent;
+    float: none;
+    position: relative;
+}
+.d-1 {
+    left: -60px;
+}
+.d-2 {
+    left: -50px;
+}
+.d-3 {
+    left: -40px;
+}
+.d-4 {
+    left: -30px;
+}
+.d-5 {
+    left: -25px;
+}
+.d-6 {
+    left: -28px;
+}
+.d-7 {
+    left: -25px;
+}
+.d-8 {
+    left: -30px;
+}
+.d-9 {
+    left: -40px;
+}
+.d-10 {
+    left: -50px;
+}
+.d-11 {
+    left: -55px;
+    position: relative;
+}
+.d-12 {
+    left: -75px;
+    position: relative;
+}
+.mt-150 {
+    margin-top: 25%;
+}
+
+/* ---------- MAX 991PX ---------- */
+@media only screen and (max-width: 991px) {
+    .tabstyle-9 .responsive-tabs {
+        width: 100%;
+        padding: 2.5% 7.5%;
+    }
+    .tab-content-style-9 {
+        width: 100%;
+        float: right;
+    }
+    .mt-150 {
+        margin-top: 5%;
+    }
+    .time-line {
+        background: url(https://www.grbdairyfood.com/image/home-section2-m.jpg) no-repeat center -110px;
+        background-size: cover;
+        padding: 2.5%;
+    }
+    .tabstyle-9 .responsive-tabs li a:hover,
+    .tabstyle-9 .responsive-tabs li.active,
+    .tabstyle-9 .responsive-tabs li.active a {
+        color: #d72016;
+        background: transparent url(../img/icons/dot-seleted.png) no-repeat center 5px / 60%;
+    }
+    .tabstyle-9 .responsive-tabs li a {
+        display: block;
+        padding: 50px 0px 0px 0px;
+        text-align: left;
+        line-height: 0px;
+        font-size: 14px;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s ease-out 0s;
+        font-weight: bold;
+        color: #010101;
+        background: transparent url(../img/icons/dot.png) no-repeat center 5px / 60%;
+        text-align: center;
+    }
+    .tabstyle-9 .responsive-tabs li {
+        margin: 0;
+        text-align: center;
+        line-height: 50px;
+        display: block;
+        padding: 0;
+        border-right: 0px solid #ebebeb;
+        border-top: 0px solid #ebebeb;
+        border-bottom: 0px solid #ebebeb;
+        border-left: 0px solid #ebebeb !important;
+        background-color: transparent;
+        float: left;
+        position: relative;
+        width: calc(100% / 12);
+    }
+    .his-img {
+        text-align: center;
+    }
+    .his-img img {
+        width: 45% !important;
+    }
+    .responsive-tabs-content {
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .d-1 {
+        left: -30px;
+        top: 0;
+    }
+    .d-2 {
+        left: -25px;
+        top: 15px;
+    }
+    .d-3 {
+        left: -25px;
+        top: 23px;
+    }
+    .d-4 {
+        left: -25px;
+        top: 30px;
+    }
+    .d-5 {
+        left: -22px;
+        top: 37px;
+    }
+    .d-6 {
+        left: -15px;
+        top: 40px;
+    }
+    .d-7 {
+        left: -5px;
+        top: 43px;
+    }
+    .d-8 {
+        left: 5px;
+        top: 43px;
+    }
+    .d-9 {
+        left: 10px;
+        top: 43px;
+    }
+    .d-10 {
+        left: 15px;
+        top: 35px;
+    }
+    .d-11 {
+        left: 20px;
+        top: 27px;
+    }
+    .d-12 {
+        left: 30px;
+        top: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .time-line {
+        background: url(https://www.grbdairyfood.com/image/home-section2-m.jpg) no-repeat center -10px;
+        background-size: cover;
+        padding: 2.5%;
+    }
+    .tabstyle-9 .responsive-tabs li a {
+        display: block;
+        padding: 35px 0px 0px 0px;
+        font-size: 10px;
+    }
+}
