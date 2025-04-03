@@ -70,6 +70,11 @@
     border: none;
 }
 
+/* Breadcrumb Area */
+.breadcrumb-bg::after {
+    background-image: none;
+}
+
 /* Banner Section */
 .banner-area-two {
     padding: 7.5% 0% 0%;
@@ -419,6 +424,66 @@
 }
 .copyright-text p a {
     font-weight: 600;
+}
+
+/* Contact Page */
+.contact-box {
+	padding: 30px 15px;
+	background: var(--tg-white);
+	margin: 0px;
+    min-height: 250px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.contact-box::before,
+.contact-box::after {
+	border-left: 4px solid var(--tg-primary-color);
+	height: 150px;
+	width: 5px;
+}
+.contact-box::after {
+	left: auto;
+	right: 0;
+}
+.contact-icon {
+	font-size: 50px;
+	color: var(--tg-secondary-color);
+	margin: 0 0 15px;
+}
+.contact-icon .overlay-icon {
+	background: var(--tg-white);
+	color: var(--tg-primary-color);
+	right: -15px;
+}
+.contact-content .title {
+	font-size: 30px;
+	margin: 0 0 15px;
+}
+.contact-form label {
+    margin: 0 0 5px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 8px 15px;
+}
+.contact-form textarea {
+    min-height: 100px;
+}
+.contact-form select.form-select {
+    min-height: 50px;
+    padding: 8px 15px;
+    margin: 0 0 15px;
+    color: var(--tg-body-font-color);
+}
+
+
+/* Breadcrumb Bgs */
+.breadcrumb-bg {
+    background-image: url(../img/bg/video_bg.jpg);
+}
+.contact-bg {
+    background-image: url(../img/bg/feedback-bg.png);
 }
 
 /* Responsiveness */
