@@ -2,8 +2,7 @@
 /* Timeline Journey */
 .time-line {
     padding: 5% 0%;
-    background: url(https://www.grbdairyfood.com/image/home-section2-bg.jpg) no-repeat center top;
-    /* background: url(../img/bg/footer-bg-old.png) no-repeat center top; */
+    background: url(../img/bg/home-section2-bg.png) no-repeat center top;
     background-size: cover;
     margin-bottom: 2.5%;
 }
@@ -11,14 +10,14 @@
     text-align: center;
 }
 .upholding-head {
-    color: #6a2d0d;
+    color: var(--tg-primary-color);
     font-size: 24px;
     width: 100%;
     margin: 0px auto;
     line-height: 1.2;
 }
 .throught-aegs {
-    color: #b75a17;
+    color: var(--tg-white-color);
     font-size: 20px;
     width: 100%;
     margin: 0px auto;
@@ -156,7 +155,7 @@
         margin-top: 5%;
     }
     .time-line {
-        background: url(https://www.grbdairyfood.com/image/home-section2-m.jpg) no-repeat center -110px;
+        background: url(../img/bg/home-section2-vertical-bg.png) no-repeat center -90px;
         background-size: cover;
         padding: 2.5%;
     }
@@ -258,13 +257,13 @@
 
 @media only screen and (max-width: 500px) {
     .time-line {
-        background: url(https://www.grbdairyfood.com/image/home-section2-m.jpg) no-repeat center -10px;
+        background: url(../img/bg/home-section2-vertical-bg.png) no-repeat center 0px;
         background-size: cover;
         padding: 2.5%;
     }
     .tabstyle-9 .responsive-tabs li a {
         display: block;
-        padding: 35px 0px 0px 0px;
+        padding: 30px 0px 0px 0px;
         font-size: 10px;
     }
 }
