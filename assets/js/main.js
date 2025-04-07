@@ -336,7 +336,7 @@ $('.home-shop-active').slick({
 $('.related-product-active').slick({
 	dots: true,
 	infinite: true,
-	speed: 1000,
+	speed: 10,
 	autoplay: true,
 	arrows: false,
 	slidesToShow: 4,
@@ -354,7 +354,7 @@ $('.related-product-active').slick({
 		{
 		breakpoint: 992,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 2,
 			}
 		},
 		{

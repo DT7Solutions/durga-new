@@ -35,6 +35,7 @@
     background-color: var(--tg-secondary-color);
     opacity: 1;
 }
+.tg-section-title .title,
 .section-title .title {
     font-size: 40px;
     line-height: 1.4;
@@ -218,9 +219,17 @@
 .product-content a.btn-three {
     padding: 10px 25px;
 }
+.product-thumb a {
+    padding: 20px;
+}
+.product-content {
+    padding: 0 15px 20px;
+}
 .product-bottom {
     margin: 0px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .product-bottom .action-button {
     width: 30px;
@@ -251,6 +260,9 @@
 }
 .benifits .ingredients-content-two p {
     max-width: 200px;
+}
+.benifits .product-item {
+    box-shadow: none;
 }
 .durga-ghee-benifit-active .slick-dots {
 	display: flex;
@@ -288,10 +300,10 @@
 
 /* Video Process */
 .tg-video-bg {
-    background-image: url(../img/bg/ghee-making-video-bg.jpg);
+    background-image: url(../img/bg/ghee-making-video-bg.png);
 }
 .tg-video-bg::after {
-    opacity: 0.4;
+    opacity: 0.3;
     background-image: -webkit-linear-gradient(5deg, #ed1d24 0%, #b31217 65%);
 }
 .tg-video-bg::before {
@@ -331,18 +343,28 @@
     background-color: var(--tg-white-color);
     color: var(--tg-primary-color);
 }
+.tg-blog-post-content .title {
+    min-height: 75px;
+}
 
 /* CTA */
 .cta-wrap {
     background-size: cover;
     background-position: center;
-    padding: 50px;
+    padding: 5%;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
+.cta-wrap .call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .cta-img img {
-    max-width: 250px;
+    max-width: 350px;
     height: auto;
+    margin-bottom: -7.5%;
 }
 .cta-title {
     max-width: 650px;
@@ -377,6 +399,11 @@
 .footer-top-wrap p,
 .footer-top-wrap ul li a {
     color: var(--tg-black-color) !important;
+}
+.footer-top-wrap p,
+.footer-top-wrap ul li a {
+    opacity: 0.8;
+    font-weight: 500;
 }
 .footer-contact-wrap .list-wrap {
     margin: 15px 0 0;
@@ -705,6 +732,17 @@
     .process-mobile .process-main img {
         max-width: 250px;
     }
+    .tg-blog-post-content .title {
+        min-height: 50px;
+    }
+    .cta-wrap .call-to-action {
+        justify-content: flex-start !important;
+        gap: 15px;
+    }
+    .cta-wrap .call-to-action .cta-title {
+        padding: 0 2.5% 0 0%;
+    }
+    
 }
 @media (max-width: 575px) {
     .banner-img-two {
