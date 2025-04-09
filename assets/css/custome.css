@@ -617,6 +617,14 @@
 .widget .categories-list li a:hover {
     color: var(--tg-primary-color);
 }
+.widget .Product-tag-list {
+    gap: 5px;
+}
+.Product-tag-list li a {
+    padding: 6px 12px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
 
 /* Responsiveness */
 @media (max-width: 1500px) {
