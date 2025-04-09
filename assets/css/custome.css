@@ -1,6 +1,8 @@
 
 /* Root Global */
 :root {
+    --tg-body-font-family: 'Roboto', sans-serif;
+    --tg-heading-font-family: 'Roboto', sans-serif;
     --tg-primary-color: #ed1d24;
     --tg-secondary-color: #FAA432;
     --tg-white-color: #ffffff;
