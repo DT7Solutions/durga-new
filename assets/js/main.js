@@ -380,9 +380,12 @@ $('.durga-ghee-benifit-active').slick({
 	infinite: true,
 	speed: 1000,
 	autoplay: true,
+	autoplaySpeed: 10000,
 	arrows: false,
 	slidesToShow: 1,
 	slidesToScroll: 1,
+	fade: true,
+	cssEase: 'linear'
 });
 
 /*=============================================
