@@ -700,5 +700,41 @@ function wowAnimation() {
 	wow.init();
 }
 
+/*=============================================
+	=    		 Timeline  	         =
+=============================================*/
+(window.timber = window.timber || {}),
+  $(timber.init),
+  $(function () {
+    $(".timeline-nav").slick({
+      slidesToShow: 13,
+      slidesToScroll: 1,
+      asNavFor: ".timeline-slider",
+      centerMode: !1,
+      focusOnSelect: !0,
+      mobileFirst: !0,
+      arrows: !1,
+      infinite: !1,
+      responsive: [
+        { breakpoint: 768, settings: { slidesToShow: 8 } },
+        { breakpoint: 0, settings: { slidesToShow: 4, slidesToScroll: 2 } },
+      ],
+    }),
+      $(".timeline-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: !1,
+        asNavFor: ".timeline-nav",
+        centerMode: !0,
+        cssEase: "ease",
+        edgeFriction: 1,
+        mobileFirst: !0,
+        speed: 500,
+        responsive: [
+          { breakpoint: 0, settings: { centerMode: !1 } },
+          { breakpoint: 768, settings: { centerMode: !0 } },
+        ],
+      });
+});
 
 })(jQuery);

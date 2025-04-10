@@ -120,6 +120,9 @@
 .features-products-thumb {
     margin: 0px 0px 0px 75px;
 }
+.features-products-thumb::before {
+    display: none;
+}
 .features-products-thumb .main-img::after {
     content: "";
     position: absolute;
@@ -525,7 +528,7 @@
 
 /* Our Process */
 .ourProcess {
-    height: 635px;
+    height: 500px;
 }
 .process-details {
     position: relative;
@@ -643,6 +646,150 @@
     margin-bottom: 0px;
 }
 
+/* Timeline Slider */
+.journey-area .custom-content .section-title p {
+    max-width: 850px;
+    margin: auto;
+}
+.timeline {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+}
+.timeline-nav__item {
+    width: auto;
+    height: auto;
+    text-align: center;
+    opacity: 1;
+    background: transparent;
+    color: var(--tg-black-color);
+    margin: 10px 25px !important;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.4;
+    outline: none;
+    cursor: pointer;
+}
+.timeline-slide__content img {
+    text-align: center;
+    margin: 0 auto;
+}
+.timeline-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-42%);
+    width: 150%;
+    height: 2px;
+    background-color: var(--tg-gray-two);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.timeline-nav__item.slick-current {
+    color: var(--tg-primary-color);
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 600;
+}
+.timeline-nav__item.slick-current::before {
+    background-color: var(--tg-primary-color);
+}
+.timeline-wrapper {
+    position: relative;
+    width: 100%;
+    height: 425px;
+    margin: 0px auto;
+}
+.timeline-slider {
+    height: 100%;
+}
+.timeline .slick-list {
+    height: 100%;
+}
+.timeline .slick-track {
+    height: 100%;
+    margin: 1% 0;
+}
+.timeline-slide {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    outline: none;
+    background-size: auto 400px, cover;
+    background-position: top;
+    margin: 0 24px;
+    width: 80%;
+    z-index: 1;
+}
+.timeline-slide:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 52, 113, 0.8);
+    z-index: 2;
+}
+.timeline-slide__content {
+    z-index: 5;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+    padding: 0%;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.timeline-slide__content img {
+    max-width: 400px;
+}
+.timeline-year {
+    z-index: 5;
+    font-size: 35px;
+    color: #ffffff;
+    background: var(--tg-primary-color);
+    padding: 15px 26px;
+    -webkit-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+.timeline-text {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 2.5%;
+}
+.timeline .slick-current:after {
+    background-color: rgba(0, 52, 113, 0);
+}
+.timeline .slick-current .timeline-year {
+    opacity: 1;
+}
+.timeline .slick-current .timeline-slide__content {
+    opacity: 1;
+}
+@media (min-width: 991px) {
+    .timeline .slick-list {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 575px) {
+    .timeline .slick-track {
+        margin: 2.5% 0;
+    }
+    .timeline-slide__content,
+    .timeline-slide__content img {
+        width: 100%;
+    }
+}
+
+
 /* Responsiveness */
 @media (max-width: 1500px) {
     .padding-defult-top-bottom {
@@ -674,6 +821,15 @@
     }
 }
 @media (max-width: 991px) {
+    .video-bg {
+        min-height: 350px;
+    }
+    .banner-area-two {
+        height: 400px;
+    }
+    .banner-area-two img {
+        display: none;
+    }
     .brand-item {
         max-width: 100px;
     }
@@ -812,6 +968,16 @@
     
 }
 @media (max-width: 575px) {
+    .video-bg {
+        min-height: 250px;
+    }
+    .banner-area-two {
+        height: 250px;
+        margin-top: -5%;
+    }
+    .banner-area-two img {
+        display: none;
+    }
     .banner-img-two {
         bottom: -2.5%;
     }
@@ -820,6 +986,9 @@
     }
     .section-title .title {
         font-size: 28px;
+    }
+    .about-area .features-products-thumb .shape-img {
+        max-width: 50%;
     }
     .features-products-thumb {
         margin: 0px 0px 0px 25px;
@@ -854,7 +1023,7 @@
         min-height: auto;
     }
     .durga-ghee-benifit-active .slick-dots {
-        margin-top: -10%;
+        /* margin-top: -10%; */
     }
     .ourProcess {
         height: 100%;
