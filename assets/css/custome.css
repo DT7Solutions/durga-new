@@ -8,9 +8,13 @@
     --tg-white-color: #ffffff;
     --tg-black-color: #000000;
     --tg-rating-color: #FFD700;
+    --tg-cream-bg-color: #fff6e3;
 }
 .btn-three {
     padding: 10px 30px;
+}
+.padding-none {
+    padding: 0;
 }
 .padding-defult {
     padding: 5% 0;
@@ -100,6 +104,9 @@
 }
 
 /* Brand Partners */
+.brand-area {
+    background-color: var(--tg-cream-bg-color);
+}
 .brand-item {
     max-width: 150px;
     max-height: 100%;
@@ -152,6 +159,103 @@
     z-index: 0;
     transition: .35s linear;
     max-width: 100%;
+}
+
+/** about-company-area-section **/
+.auto-container{
+    position:static;
+    max-width:1300px;
+    padding:0px 15px;
+    margin:0 auto;
+}
+.about-company-area {
+    background-color: var(--tg-cream-bg-color);
+    position: relative;
+}
+.about-company-area .bg-layer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-company-area .pattern-layer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 680px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content_block_6 .content-box {
+    position: relative;
+    display: block;
+}
+.content_block_6 .content-box .inner-box .single-item {
+    position: relative;
+    display: block;
+    padding-left: 115px;
+    margin-bottom: 33px;
+    min-height: 87px;
+}
+.content_block_6 .content-box .inner-box .single-item:last-child {
+    margin-bottom: 0px;
+}
+.content_block_6 .content-box .inner-box .single-item .icon-box {
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    background: #d5f1f1;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+.content_block_6 .content-box .inner-box .single-item .icon-box img {
+    max-width: 75px;
+    height: auto;
+}
+.content_block_6 .content-box .inner-box .single-item:hover .icon-box {
+    color: #fff;
+}
+.content_block_6 .content-box .inner-box .single-item .icon-box:before {
+    position: absolute;
+    content: '';
+    width: 125%;
+    height: 125%;
+    left: -15%;
+    top: -2.5%;
+    right: 0px;
+    border-radius: 50%;
+    transform: scale(0, 0);
+    z-index: -1;
+    transition: all 500ms ease;
+}
+.content_block_6 .content-box .inner-box .single-item:hover .icon-box:before {
+    transform: scale(1, 1);
+}
+.content_block_6 .content-box .inner-box .single-item h4 {
+    margin-bottom: 9px;
+}
+.content_block_6 .content-box .inner-box {
+    padding-right: 30px;
+}
+.content_block_6 .content-box .sec-title {
+    margin-bottom: 42px;
+}
+@media only screen and (max-width: 991px) {
+    .about-company-area .bg-layer, 
+    .about-company-area .pattern-layer {
+        display: none;
+    }
 }
 
 /* Features */
