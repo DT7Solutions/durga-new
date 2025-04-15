@@ -658,6 +658,72 @@ $(".qtybutton").on("click", function () {
 	$button.parent().find("input").val(newVal);
 });
 
+/*=============================================
+	=    	Related Products Active		    =
+=============================================*/
+$('.rp-active').slick({
+	dots: false,
+	infinite: true,
+	speed: 1000,
+	autoplay: true,
+	arrows: false,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+			}
+		},
+	]
+});
+
+/*=============================================
+	=    		 Cart Active  	         =
+=============================================*/
+$(".cart-plus-minus").append('<div class="dec button">-</div><div class="inc button">+</div>');
+$(".button").on("click", function () {
+	var $button = $(this);
+	var oldValue = $button.parent().find("input").val();
+	if ($button.text() == "+") {
+		var newVal = parseFloat(oldValue) + 1;
+	} else {
+		// Don't allow decrementing below zero
+		if (oldValue > 0) {
+			var newVal = parseFloat(oldValue) - 1;
+		} else {
+			newVal = 0;
+		}
+	}
+	$button.parent().find("input").val(newVal);
+});
+
 
 /*=============================================
 	=    		Isotope	Active  	      =
