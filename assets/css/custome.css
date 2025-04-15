@@ -474,45 +474,85 @@
     background-color: var(--tg-white-color);
     color: var(--tg-primary-color);
 }
+.tg-blog-post-content {
+    padding: 35px 35px 0px;
+    border: 2px solid var(--tg-cream-bg-color);
+}
 .tg-blog-post-content .title {
     min-height: 75px;
 }
 
-/* CTA */
-.cta-wrap {
-    background-size: cover;
-    background-position: center;
-    padding: 5% 2.5%;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+/*============= CTA Area =============*/
+.cta-area {
+    padding: 120px 0;
+    z-index: 1;
 }
-.cta-wrap .call-to-action {
+.cta-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    background-attachment: fixed;
+}
+.cta-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .65;
+}
+.cta-content {
+    text-align: center;
+}
+.cta-content img {
+    margin-bottom: 20px;
+}
+.cta-content .title {
+    margin-bottom: 35px;
+    color: var(--tg-white);
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.cta-content .cta-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
     flex-wrap: wrap;
 }
-.cta-img img {
-    max-width: 350px;
-    height: auto;
+.cta-content .cta-bottom .btn {
+    font-size: 14px;
+    letter-spacing: 2px;
 }
-.cta-title {
-    max-width: 750px;
-    padding: 0 2.5%;
+.cta-content .cta-bottom .btn.call-btn {
+    color: var(--tg-primary-color);
+    background: var(--tg-white);
+    padding: 3px 20px 3px 5px;
 }
-.cta-title .title {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--tg-white-color);
-    margin-bottom: 10px;
-}
-.cta-title p {
-    font-size: 16px;
-    color: var(--tg-white-color);
-    margin-bottom: 0;
+.cta-content .cta-bottom .btn.call-btn i {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tg-primary-color);
+    color: var(--tg-white);
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* Footer Insta Posts */
+.footer-insta-item a {
+	border: 2px dashed var(--tg-primary-color);
+}
 .footer-insta-item a::before {
     background: var(--tg-primary-color);
 }
