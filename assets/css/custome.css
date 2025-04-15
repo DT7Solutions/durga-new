@@ -14,7 +14,7 @@
     padding: 10px 30px;
 }
 .padding-none {
-    padding: 0;
+    padding: 2.5% 0%;
 }
 .padding-defult {
     padding: 5% 0;
@@ -50,6 +50,9 @@
 }
 .tg-cube-grid .tg-cube {
     background-color: var(--tg-primary-color);
+}
+.cream-bg {
+    background-color: var(--tg-cream-bg-color);
 }
 
 /* Header */
@@ -104,9 +107,6 @@
 }
 
 /* Brand Partners */
-.brand-area {
-    background-color: var(--tg-cream-bg-color);
-}
 .brand-item {
     max-width: 150px;
     max-height: 100%;
@@ -160,6 +160,12 @@
     transition: .35s linear;
     max-width: 100%;
 }
+.fp-circle {
+	position: absolute;
+	background:  rgb(237, 29, 36, 0.035);
+	z-index: -2;
+	border-radius: 50%;
+}
 
 /** about-company-area-section **/
 .auto-container{
@@ -169,7 +175,6 @@
     margin:0 auto;
 }
 .about-company-area {
-    background-color: var(--tg-cream-bg-color);
     position: relative;
 }
 .about-company-area .bg-layer {
@@ -271,7 +276,6 @@
     flex-direction: column;
 }
 .features-item-three .features-content .title {
-    color: var(--tg-primary-color);
     margin-bottom: 0%;
 }
 .features-item-three .features-content p {
@@ -301,7 +305,7 @@
     background: var(--tg-gray-two);
     padding: 2.5% 5%;
     border-radius: 10px;
-    margin-top: -15%;
+    margin-top: -10%;
     position: relative;
     z-index: 2;
 }
@@ -520,6 +524,7 @@
 .footer-top-wrap {
     background: url(../img/bg/footer-bg.png) no-repeat center center;
     background-size: cover;
+    padding: 5% 0 0%;
 }
 .footer-top-wrap h4,
 .footer-top-wrap p,
