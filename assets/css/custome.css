@@ -619,11 +619,10 @@
 
 /* Video Process */
 .tg-video-bg {
-    background-image: url(../img/bg/ghee-making-video-bg.png);
+    background-image: url(../img/bg/dairy-cow-green-pasture-bg.png);
 }
 .tg-video-bg::after {
-    opacity: 0.3;
-    background-image: -webkit-linear-gradient(5deg, #ed1d24 0%, #b31217 65%);
+    opacity: 0;
 }
 .tg-video-bg::before {
     display: none;
