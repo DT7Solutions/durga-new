@@ -4,7 +4,8 @@
     --tg-body-font-family: 'Roboto', sans-serif;
     --tg-heading-font-family: 'Roboto', sans-serif;
     --tg-primary-color: #ed1d24;
-    --tg-secondary-color: #FAA432;
+    --tg-secondary-color: #FDE99C;
+    --tg-third-color: #FAA432;
     --tg-white-color: #ffffff;
     --tg-black-color: #000000;
     --tg-rating-color: #FFD700;
@@ -12,6 +13,9 @@
 }
 .btn-three {
     padding: 10px 30px;
+}
+.btn:hover {
+    color: var(--tg-primary-color);
 }
 .padding-none {
     padding: 2.5% 0%;
@@ -510,7 +514,7 @@
     margin-bottom: 2.5%;
 }
 .product-content-three .tag:hover {
-    color: var(--tg-secondary-color);
+    color: var(--tg-third-color);
 }
 .product-content-three .title {
     margin-bottom: 2.5%;
@@ -556,8 +560,7 @@
     cursor: pointer;
     z-index: 1;
     font-weight: 700;
-    font-size: 18px;
-    color: var(--tg-secondary-color);
+    font-size: 24px;
     user-select: none;
     transition: .3s linear;
 }
@@ -578,6 +581,7 @@
 }
 .benifits .product-item {
     box-shadow: none;
+    margin: 2.5% 0%;
 }
 .durga-ghee-benifit-active .slick-dots {
 	display: flex;
@@ -663,11 +667,11 @@
     color: var(--tg-primary-color);
 }
 .tg-blog-post-content {
-    padding: 35px 35px 0px;
+    padding: 35px 35px;
     border: 2px solid var(--tg-cream-bg-color);
 }
 .tg-blog-post-content .title {
-    min-height: 75px;
+    min-height: 90px;
 }
 
 /*============= CTA Area =============*/
@@ -739,10 +743,13 @@
 
 /* Footer Insta Posts */
 .footer-insta-item a {
-	border: 2px dashed var(--tg-primary-color);
+	border: 1px dashed var(--tg-primary-color);
 }
 .footer-insta-item a::before {
     background: var(--tg-primary-color);
+}
+.footer-insta-item a::after {
+	color: var(--tg-secondary-color);
 }
 .footer-insta-item a:hover::before {
     opacity: 0.5;
@@ -750,9 +757,10 @@
 
 /* Footer */
 .footer-top-wrap {
-    background: url(../img/bg/footer-bg.png) no-repeat center center;
+    background: url(../img/bg/footer-bg.svg) no-repeat;
     background-size: cover;
-    padding: 5% 0 0%;
+    padding: 2.5% 0 0%;
+    background-origin: content-box;
 }
 .footer-top-wrap h4,
 .footer-top-wrap p,
@@ -789,6 +797,9 @@
 }
 .footer-widgets-wrap .row [class*="col-"]:nth-child(4n+4) .footer-widget {
 	padding-left: 2.5%;
+}
+.footer-widget .footer-text {
+	width: 100%;
 }
 .footer-widget {
     margin-bottom: 5%;
@@ -1125,7 +1136,6 @@
         width: 100%;
     }
 }
-
 
 /* Responsiveness */
 @media (max-width: 1500px) {
