@@ -67,9 +67,9 @@
     border-right: none;
     padding: 5px 30px;
 }
-.menu-area-two .navbar-wrap ul {
+/* .menu-area-two .navbar-wrap ul {
     margin: 0 0 0 auto;
-}
+} */
 .menu-area-two .navbar-wrap ul li a {
     padding: 10px 20px;
     line-height: 20px;
@@ -81,6 +81,10 @@
     color: var(--tg-black-color);
 }
 .menu-area-two .mobile-nav-toggler {
+    border: none;
+}
+.header-action-two .list-wrap li a,
+.menu-area-two.sticky-menu .header-action-two .list-wrap li a {
     border: none;
 }
 
@@ -247,6 +251,106 @@
     max-width: 60px;
 }
 
+/*============= Premium Features =============*/
+.premium-features-area {
+    position: relative;
+}
+.premium-features-area-inner-wrap .row .col-36 {
+    width: 36%;
+    flex: 0 0 auto;
+}
+.premium-features-area-inner-wrap .row .col-64 {
+    width: 64%;
+    flex: 0 0 auto;
+}
+.premium-features-content {
+    position: relative;
+}
+.premium-features-list .list-wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+}
+.premium-features-list .list-wrap li a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--tg-heading-font-family);
+    text-transform: uppercase;
+    color: var(--tg-white-color);
+    text-align: center;
+    display: block;
+}
+.premium-features-list .list-wrap li a .icon {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid var(--tg-rating-color);
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 12px;
+}
+.premium-features-list .list-wrap li a .icon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: var(--tg-brown-two);
+    border-radius: 50%;
+    z-index: -1;
+    transition: .3s linear;
+}
+.premium-features-list .list-wrap li a:hover .icon::before {
+    background: var(--tg-secondary-color);
+}
+.premium-features-list .list-wrap li a .icon::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px dashed var(--tg-rating-color);
+    transition: opacity .3s linear;
+    animation: teamRotate 10s linear infinite;
+    opacity: 0;
+}
+.premium-features-list .list-wrap li a:hover .icon {
+    border: none;
+}
+.premium-features-list .list-wrap li a:hover .icon::after {
+    opacity: 1;
+}
+.premium-features-list .list-wrap li a .icon img {
+    width: 100px;
+}
+@keyframes teamRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes teamRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
 /* Counter */
 .counter-wrap {
     background: var(--tg-gray-two);
@@ -332,7 +436,6 @@
 .product-bg {
     background-size: cover;
     background-position: center;
-    padding: 120px 0 80px;
     position: relative;
     z-index: 1;
 }
@@ -1180,6 +1283,42 @@
     }
     .features-item-three .features-content p {
         min-height: 150px;
+    }
+    .premium-features-content {
+        text-align: center;
+    }
+    .premium-features-area-inner-wrap {
+        min-height: 300px;
+    }
+    .premium-features-area-inner-wrap .row .col-36 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    .premium-features-area-inner-wrap .row .col-64 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    .premium-features-list .list-wrap {
+        gap: 15px;
+        justify-content: center;
+    }
+    .premium-features-list .list-wrap li a {
+        font-size: 16px;
+    }
+    .premium-features-list .list-wrap li a .icon {
+        width: 115px;
+        height: 115px;
+    }
+    .premium-features-list .list-wrap li a .icon::before {
+        width: 100px;
+        height: 100px;
+    }
+    .premium-features-list .list-wrap li a .icon::after {
+        width: 115px;
+        height: 115px;
+    }
+    .premium-features-list .list-wrap li a .icon img {
+        width: 75px;
     }
     .counter-content .count {
         justify-content: center;
