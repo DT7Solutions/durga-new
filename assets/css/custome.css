@@ -67,6 +67,9 @@
     border-right: none;
     padding: 5px 30px;
 }
+.menu-area-two .menu-nav {
+    align-items: center;
+}
 /* .menu-area-two .navbar-wrap ul {
     margin: 0 0 0 auto;
 } */
