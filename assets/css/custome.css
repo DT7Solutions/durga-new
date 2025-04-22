@@ -1003,6 +1003,9 @@
 .breadcrumb-bg {
     background-image: url(../img/bg/video_bg.jpg);
 }
+.about-bg {
+    background-image: url(../img/bg/about-bg.png);
+}
 .contact-bg {
     background-image: url(../img/bg/feedback-bg.png);
 }

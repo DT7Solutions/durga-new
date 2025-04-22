@@ -513,7 +513,7 @@ label {
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 20px;
-	background-color: var(--tg-primary-color);
+	background-color: var(--tg-secondary-color);
 	color: var(--tg-white);
 	box-shadow: 0px 5px 12.09px 0.91px rgba(71, 51, 127, 0.14);
 }
@@ -575,7 +575,7 @@ label {
 .transparent-header .navbar-wrap ul li:hover>a,
 .navbar-wrap>ul>li.active>a,
 .navbar-wrap>ul>li:hover>a {
-	color: var(--tg-primary-color);
+	color: var(--tg-secondary-color);
 }
 
 
