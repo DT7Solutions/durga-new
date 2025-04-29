@@ -348,7 +348,7 @@ $('.related-product-active').slick({
 		breakpoint: 1500,
 			settings: {
 				slidesToShow: 4,
-				arrows: true,
+				// arrows: true,
 			}
 		},
 		{

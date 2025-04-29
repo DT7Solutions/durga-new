@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/custome.css">
-        <link rel="stylesheet" href="assets/css/journey-timeline.css">
+        <!-- <link rel="stylesheet" href="assets/css/journey-timeline.css"> -->
         <link rel="stylesheet" href="assets/css/timeline.css">
     
     </head>
@@ -35,7 +35,7 @@
 
         <!-- Pre-loader-start -->
         <div id="preloader">
-            <div class="tg-cube-grid">
+            <div class="tg-cube-grid d-none">
                 <div class="tg-cube tg-cube1"></div>
                 <div class="tg-cube tg-cube2"></div>
                 <div class="tg-cube tg-cube3"></div>
@@ -184,7 +184,7 @@
         <main class="main-area fix">
             
             <!-- banner-area -->
-            <section class="banner-area-two banner-bg" data-background="">
+            <section id="video-area" class="banner-area-two banner-bg" data-background="">
                 <video id="video-bg" autoplay loop playsinline class="video-bg">
                     <source src="./assets/img/video/durga-ghee-unlock-the-flavour-pure-aroma-of-golden.mp4" type="video/mp4">
                 </video>
@@ -2176,12 +2176,22 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/responsive-tabs.min.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/custom.js"></script>
+        <!-- <script src="assets/js/custom.js"></script> -->
 
         <script>
             SVGInject(document.querySelectorAll("img.injectable"));
         </script>
         
+        <!-- Video Audio Enable/ Disable Logic-->
+        <script>
+        document.getElementById('video-bg').muted = true;
+        document.getElementById('video-bg').play();
+        document.getElementById('video-area').addEventListener('click', function() {
+            var video = document.getElementById('video-bg');
+            video.muted = !video.muted;
+        });
+        </script>
+
         <script>
             var menu = ['Start of Durga Ghee Journey', 'Local Distribution Begins', 'Durgadairy Launched', 'Processing Upgrade', 'Local Retail', 'Buffalo Ghee Packaging Innovation', 'Brand Building Begins', 'Launch of Durga Ghee Brand', 'Expansion with Bhavani & Kamadhenu', 'E-commerce Entry', 'Global Reach']
             var mySwiper = new Swiper('.process-slider', {
