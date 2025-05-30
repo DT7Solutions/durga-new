@@ -1491,3 +1491,13 @@
         max-width: 150px;
     }
 }
+
+.policy-section {
+    position: relative;
+}
+.shipping-return-policy-area,
+.refund-cancellation-policy-area,
+.privacy-policy-area,
+.terms-conditions-area {
+    padding: 5% 0;
+}

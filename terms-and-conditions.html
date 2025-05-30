@@ -4,9 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="author" content="Durga Ghee Brand">
-        <title>Contact Durga Ghee | Get in Touch for Orders & Inquiries</title>
-        <meta name="description" content="Reach out to Durga Ghee for bulk orders, retail inquiries, partnerships, and customer support. Contact us today to experience the purity and tradition of our premium ghee products.">
-        <meta name="keywords" content="Contact Durga Ghee, Buy Ghee Online, Wholesale Ghee Supplier, Bulk Ghee Orders, Pure Cow Ghee Inquiry, Premium Desi Ghee, Ghee for Restaurants, Indian Ghee Manufacturer, Ghee Exporter, Healthy Ghee Products">
+        <title>Terms & Conditions | Durga Ghee - Know Your Rights & Obligations</title>
+        <meta name="description" content="Review the Terms & Conditions for using the Durga Ghee website. Learn about your rights, order policies, and service agreements.">
+        <meta name="keywords" content="Durga Ghee Terms and Conditions, Website Usage Policy, Ghee Purchase Terms, Customer Rights, Ghee Store Rules, Shopping Terms">
+
         
         <meta name="robots" content="INDEX,FOLLOW">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +23,12 @@
         <link rel="stylesheet" href="assets/css/jquery-ui.css">
         <link rel="stylesheet" href="assets/css/odometer.css">
         <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
         <link rel="stylesheet" href="assets/css/default.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/custome.css">
+
     </head>
     <body>
 
@@ -52,7 +55,7 @@
         <!-- Scroll-top-end-->
 
         <!-- header-area -->
-        <header>
+        <header id="home">
             <div id="sticky-header" class="menu-area menu-area-two transparent-header">
                 <div class="container p-0">
                     <div class="row g-0">
@@ -69,39 +72,45 @@
                                     <div class="navbar-wrap main-menu d-none d-xl-flex">
                                         <ul class="navigation align-items-center">
                                             <li><a href="./#home">Home</a></li>
-                                            <li><a href="./about">About</a></li>
-                                            <li><a href="./#features">Features</a></li>
-                                            <li class="menu-item-has-children"><a href="./#product">Product</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="#!">Our Shop</a></li>
-                                                    <li><a href="#!">Shop Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="./#news">News</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="#!">Our Blog</a></li>
-                                                    <li><a href="#!">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="active"><a href="./contact">contact</a></li>
+                                            <li class="active"><a href="./about">About</a></li>
+                                            <li><a href="./#features" class="section-link">Features</a></li>
+                                            <li><a href="./#product">Product</a>
+                                            <li><a href="./#news">News</a>
+                                            <li><a href="./contact">contact</a></li>
                                         </ul>
                                     </div>
-                                    <div class="d-none header-action header-action-two">
-                                        <ul class="list-wrap" >
-                                            <li class="header-cart">
-                                                <a href="#!">
-                                                    <span class="cart-icon">
-                                                        <i class="flaticon-shopping-cart"></i>
-                                                        <small class="cart-count-two">0</small>
-                                                    </span>
+                                    <div class="header-action d-none d-sm-block">
+                                        <ul>
+                                            <li class="header-shop-cart">
+                                                <a href="#" class="cart-count"><i class="flaticon-shopping-cart"></i>
+                                                    <span class="mini-cart-count" id="tp-cart-item">1</span>
                                                 </a>
+                                                <div class="header-mini-cart">
+                                                    <ul class="woocommerce-mini-cart cart_list product_list_widget list-wrap">
+                                                        <li class="woocommerce-mini-cart-item d-flex align-items-center">
+                                                            <a href="#" class="remove remove_from_cart_button">×</a>
+                                                            <div class="mini-cart-img">
+                                                                <img src="assets/img/products/cart_p01.jpg" alt="Product">
+                                                            </div>
+                                                            <div class="mini-cart-content">
+                                                                <h4 class="product-title"><a href="shop-details.html">Antiaging and Longevity</a></h4>
+                                                                <div class="mini-cart-price">1 ×
+                                                                    <span class="woocommerce-Price-amount amount">$49</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="woocommerce-mini-cart__total">
+                                                        <strong>Subtotal:</strong>
+                                                        <span class="woocommerce-Price-amount">$149</span>
+                                                    </p>
+                                                    <p class="checkout-link">
+                                                        <a href="cart.html" class="button wc-forward">View cart</a>
+                                                        <a href="checkout.html" class="button checkout wc-forward">Checkout</a>
+                                                    </p>
+                                                </div>
                                             </li>
-                                            <li class="header-search d-none d-sm-flex">
-                                                <a href="#!"><i class="flaticon-search"></i></a>
-                                            </li>
-                                            <li class="offCanvas-btn-two d-none d-xl-flex">
-                                                <a href="#!" class="navSidebar-button"><i class="flaticon-layout"></i></a>
-                                            </li>
+                                            <li class="header-search"><a href="#"><i class="flaticon-search"></i></a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -133,29 +142,6 @@
             <div class="menu-backdrop"></div>
             <!-- End Mobile Menu -->
 
-            <!-- offCanvas-start -->
-            <div class="offCanvas-wrap">
-                <div class="offCanvas-toggle"><video src="assets/img/icons/close.png" alt="icon"></div>
-                <div class="offCanvas-body">
-                    <div class="offCanvas-content">
-                        <h3 class="title">Getting all of the <span>Nutrients</span> you need simply cannot be done without supplements.</h3>
-                        <p>Nam libero tempore, cum soluta nobis eligendi cumque quod placeat facere possimus assumenda omnis dolor repellendu sautem temporibus officiis</p>
-                    </div>
-                    <div class="offcanvas-contact">
-                        <h4 class="number">+1 599 162 4545</h4>
-                        <h4 class="email">suxnix@gmail.com</h4>
-                        <p>5689 Lotaso Terrace, Culver City, <br> CA, United States</p>
-                        <ul class="offcanvas-social list-wrap">
-                            <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="offCanvas-overlay"></div>
-            <!-- offCanvas-end -->
-
         </header>
         <!-- header-area-end -->
 
@@ -163,18 +149,18 @@
         <main class="main-area fix">
 
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area breadcrumb-bg contact-bg padding-defult">
+            <section class="breadcrumb-area breadcrumb-bg terms-conditions-bg padding-defult">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10">
                             <div class="breadcrumb-content text-center">
-                                <h2 class="title">Contact Us</h2>
+                                <h2 class="title">Terms & Conditions</h2>
                                 <nav aria-label="Breadcrumbs" class="breadcrumb-trail">
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item trail-item trail-begin">
                                             <a href="./"><span>Home</span></a>
                                         </li>
-                                        <li class="breadcrumb-item trail-item trail-end"><span>Contact Us</span></li>
+                                        <li class="breadcrumb-item trail-item trail-end"><span>Terms & Conditions</span></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -184,135 +170,38 @@
             </section>
             <!-- breadcrumb-area-end -->
 
-            <!-- contact-area -->
-            <section class="contact-area padding-defult-top">
+            <!-- terms-conditions-area -->
+            <section class="policy-section terms-conditions-area padding-default">
                 <div class="container">
-                    <div class="contact-box-wrapper">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-9">
-                                <div class="contact-box">
-                                    <div class="contact-icon">
-                                        <span class="overlay-icon"><i class="fas fa-check"></i></span>
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <div class="contact-content">
-                                        <h5 class="title">Email Address</h5>
-                                        <p class="contact-desc"><a href="mailto:krishna@cranegroup.in">krishna@cranegroup.in</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-9">
-                                <div class="contact-box">
-                                    <div class="contact-icon">
-                                        <span class="overlay-icon"><i class="fas fa-check"></i></span>
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div class="contact-content">
-                                        <h5 class="title">Phone Number</h5>
-                                        <p class="contact-desc"><a href="tel:+91866-2853374">+91 866-2853374</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-9">
-                                <div class="contact-box">
-                                    <div class="contact-icon">
-                                        <span class="overlay-icon"><i class="fas fa-check"></i></span>
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="contact-content">
-                                        <h5 class="title">Location</h5>
-                                        <p class="contact-desc"><a href="https://maps.app.goo.gl/G3HoQDKsobpqtQZY6" target="_blank">D.No: 14-181, Nuziveedu Road, Nunna,Vijayawada, Andhra Pradesh - 521212, India.</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- contact-area-end -->
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <div class="policy-content">
+                                <h2 class="section-title text-center mb-4">Terms & Conditions</h2>
+                                <p>Welcome to <strong>https://durgaghee.com</strong>. By accessing or using our website, you agree to the terms outlined below. Please read them carefully.</p>
 
-            <!-- contact-form-end -->
-            <section class="contact-form-area padding-defult">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div id="contact-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122405.27867950477!2d80.47178469726563!3d16.5177677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fab1403de667%3A0x77037b1b23a2b9a6!2sDurga%20Dairy%20Limited!5e0!3m2!1sen!2sin!4v1743673664664!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
+                                <h4>1. Use of Website</h4>
+                                <p>You agree not to misuse this website for any unlawful purposes or attempt to interfere with its proper functioning.</p>
+
+                                <h4>2. Product Information</h4>
+                                <p>We strive to provide accurate product descriptions and pricing. However, we do not guarantee that all details are completely error-free or up-to-date.</p>
+
+                                <h4>3. Orders & Payments</h4>
+                                <p>We reserve the right to cancel or limit orders at our discretion. Orders will only be processed once full payment is received.</p>
+
+                                <h4>4. Intellectual Property</h4>
+                                <p>All content on this website (including text, logos, images, and graphics) is the property of <strong>Durga Ghee</strong> and may not be reused or reproduced without prior written permission.</p>
+
+                                <h4>5. Limitation of Liability</h4>
+                                <p>We are not responsible for any indirect, incidental, or consequential damages arising from the use of our website or products.</p>
+
+                                <h4>6. Governing Law</h4>
+                                <p>These terms and conditions are governed by and interpreted in accordance with the laws of <strong>India</strong>. Any disputes shall be subject to the jurisdiction of Indian courts.</p>
                             </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="contact-form-wrap">
-                                <div class="section-title mb-50">
-                                    <p class="sub-title">Have Questions?</p>
-                                    <h2 class="title">Get in Touch with Durga Ghee</h2>
-                                </div>
-                            
-                                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form" data-toggle="validator">
-                                    
-                                    <!-- Web3Forms API Access Key -->
-                                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                                    <input type="hidden" name="from_name" value="Durga Ghee Website">
-                                    <input type="hidden" name="subject" value="New Inquiry from Durga Ghee Contact Form">
-                            
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-grp">
-                                                <label for="full-name">Full Name</label>
-                                                <input type="text" name="full_name" id="full-name" placeholder="Enter your full name" required data-error="Full Name is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-grp">
-                                                <label for="email">Email Address</label>
-                                                <input type="email" name="email" id="email" placeholder="Enter your email" required data-error="A valid email is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-grp">
-                                                <label for="phone">Phone Number</label>
-                                                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required data-error="Phone Number is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-grp">
-                                                <label for="product">Select Product</label>
-                                                <select class="form-select" name="product" id="product" required data-error="Please select a product.">
-                                                    <option value="" disabled selected>Select a Product</option>
-                                                    <option value="Durga Ghee Jar">Durga Ghee Jar</option>
-                                                    <option value="Durga Ghee Pouches">Durga Ghee Pouches</option>
-                                                    <option value="Durga Ghee Sachets">Durga Ghee Sachets</option>
-                                                    <option value="Durga Cow Ghee Jar">Durga Cow Ghee Jar</option>
-                                                    <option value="Durga Cow Ghee Pouches">Durga Cow Ghee Pouches</option>
-                                                    <option value="Durga Cow Ghee Sachets">Durga Cow Ghee Sachets</option>
-                                                </select>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-grp">
-                                        <label for="purpose">Purpose of Contact</label>
-                                        <input type="text" name="purpose" id="purpose" placeholder="e.g., Bulk Order, Retail Inquiry, Distribution, Partnership" required data-error="Please specify the purpose of contact.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="form-grp">
-                                        <label for="message">Detailed Message</label>
-                                        <textarea name="message" id="message" placeholder="Enter your message with relevant details" required data-error="Message cannot be empty."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="form-btn mt-3">
-                                        <button type="submit" class="btn btn-three">Submit Your Inquiry</button>
-                                    </div>
-                                    <div class="messages"></div>
-                                </form>
-                            </div>                                                                           
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- contact-form-area-end -->
+            <!-- terms-conditions-area-end -->
 
             <!-- instagram-area -->
             <section class="instagram-area padding-none cream-bg">
@@ -514,54 +403,19 @@
         <script src="assets/js/jquery.inview.min.js"></script>
         <script src="assets/js/jquery.easing.js"></script>
         <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
         <script src="assets/js/svg-inject.min.js"></script>
         <script src="assets/js/jarallax.min.js"></script>
         <script src="assets/js/slick.min.js"></script>
         <script src="assets/js/validator.js"></script>
         <script src="assets/js/ajax-form.js"></script>
         <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/responsive-tabs.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/custom.js"></script>
 
         <script>
             SVGInject(document.querySelectorAll("img.injectable"));
         </script>
-        <!-- ========== Web3forms Conatct From Submition =========== -->
-        <script>
-            const form = document.querySelector('.contact-form');
-            form.addEventListener("submit", function (e) {
-                const formData = new FormData(form);
-                e.preventDefault();
-
-                var object = {};
-                formData.forEach((value, key) => {
-                    object[key] = value;
-                });
-                var json = JSON.stringify(object);
-
-                fetch("https://api.web3forms.com/submit", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        Accept: "application/json"
-                    },
-                    body: json
-                })
-                .then(async (response) => {
-                    const json = await response.json();
-                    if (response.status == 200) {
-                        window.location.href = "https://web3forms.com/success";
-                    } else {
-                        alert("Error: " + json.message);
-                    }
-                })
-                .catch((error) => {
-                    console.log(error);
-                    alert("Something went wrong!");
-                })
-                .finally(() => form.reset());
-                });
-        </script>
-
     </body>
 </html>
